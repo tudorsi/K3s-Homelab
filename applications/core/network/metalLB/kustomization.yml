@@ -1,4 +1,4 @@
 resources:
   - github.com/metallb/metallb/config/native?ref=v0.15.2
-  - namespace.yml
-#  - metallb_config.yml 
+#  - namespace.yml
+  - metallb_config.yml 

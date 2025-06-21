@@ -1,8 +1,8 @@
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
 metadata:
-  name:lb-service-ip-pool
-  namespace:metallb
+  name: lb-service-ip-pool
+  namespace: metallb
 spec:
   addresses:
     - 192.168.0.240-192.168.0.250
@@ -10,10 +10,10 @@ spec:
 ---
 
 apiVersion: metallb.io/v1beta1
-kind L2Advertisement
+kind: L2Advertisement
 metadata:
-  name:lb-l2-advert
-  namespace:metallb
+  name: lb-l2-advert
+  namespace: metallb
 spec:
   ipAddressPools:
     - lb-service-ip-pool

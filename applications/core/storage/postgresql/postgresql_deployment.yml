@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: posgresql
+  name: postgresql
   namespace: nextcloud
 spec:
   replicas: 1
@@ -27,10 +27,10 @@ spec:
         - containerPort: 5432
         volumeMounts:
         - name: postgres-storage
-          mountPaths: /var/lib/postgresql/data
+          mountPath: /var/lib/postgresql/data
       volumes:
       - name: postgres-storage
-        persistendVolumeClaim:
+        persistentVolumeClaim:
           claimName: postgres-pvc
 
 

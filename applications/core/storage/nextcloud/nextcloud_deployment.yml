@@ -32,7 +32,7 @@ spec:
         - name: NEXTCLOUD_ADMIN_PASSWORD
           value: secret #replace with secret
         - name: NEXTCLOUD_TRUSTED_DOMAINS
-          value: "192.168.250 localhost"
+          value: "192.168.0.250 localhost"
         volumeMounts: 
         - name: nextcloud-storage
           mountPath: /var/www/html

@@ -1,4 +1,4 @@
-Welcome to my homelab.
+Welcome to my homelab!
 
 Overview:
 I had an old pc lying around and decided to put it to good use.

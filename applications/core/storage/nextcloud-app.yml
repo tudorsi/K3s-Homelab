@@ -8,7 +8,7 @@ spec:
   source: 
     repoURL: https://github.com/tudorsi/K3s-Homelab.git
     targetRevision: HEAD
-    path: .
+    path: applications/core/storage
   destination:
     server: https://kubernetes.default.svc
     namespace: nextcloud
@@ -17,5 +17,4 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-    - CreateNamespace=true
-  
+    - CreateNamespace=true  
